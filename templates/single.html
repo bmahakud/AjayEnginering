@@ -1,30 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
        <title>Ajay Engineering </title>
-        <link rel = "icon" href = "img/flomatexs.png" type = "image/x-icon">
+       <link rel = "icon" href = "{% static 'img/flomatexs.png' %}" type = "image/x-icon">
+
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
+        <link href="{% static 'img/favicon.ico' %}" rel="icon">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet"> 
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/slick/slick-theme.css' %}" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
     </head>
 
     <body>
@@ -36,7 +36,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/flomatexs.png" alt="Logo" style="width: 200px; height: auto; margin: 10px; transform: scale(1.4);" >
+					<img src="{% static 'img/flomatexs.png' %}" alt="Logo" style="width: 200px; height: auto; margin: 10px; transform: scale(1.4);" >
                                 </a>
                              </div>
                         </div>
@@ -96,25 +96,21 @@
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto">
-                                   <a href="/" class="nav-item nav-link active">Home</a>
+                           <div class="navbar-nav mr-auto">
+                                <a href="/" class="nav-item nav-link">Home</a>
                                 <a href="/about" class="nav-item nav-link">About</a>
-                                <a href="/service" class="nav-item nav-link">Service</a>
+                                <a href="/services" class="nav-item nav-link">Service</a>
                                 <a href="/team" class="nav-item nav-link">Team</a>
                                 <a href="/projects" class="nav-item nav-link">Projects</a>
-                                <a href="/postpage" class="nav-item nav-link">Post Page</a>
-                                <a href="/contact" class="nav-item nav-link">Contact</a>
-
-				    <div class="nav-item dropdown">
+                                <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Post Page</a>
                                     <div class="dropdown-menu">
                                         
-                                        <a href="single.html" class="dropdown-item">Post Page</a>
+                                        <a href="/postpage" class="dropdown-item">Post Page</a>
                                     </div>
                                 </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            </div>
-                            
+                                <a href="/contact" class="nav-item nav-link">Contact</a>
+                            </div> 
                         </div>
                     </nav>
                 </div>
@@ -145,7 +141,7 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="single-content wow fadeInUp">
-                                <img src="img/single.jpg" />
+				    <img src="{% static 'img/single.jpg' %}" />
                                 <h2>Well Point Dewatering Systems</h2>
                                 <p>
                                     We use the Well Point System which is an advanced system that is far superior to the old steel system. It is highly efficient and has a successful track record as the most satisfactory method of eliminating problem of sub-surface water from construction sites besides lowering the on-site water table to a grade below the level of proposed excavation.                                </p>
@@ -178,7 +174,7 @@
                             </div>
                             <div class="single-bio wow fadeInUp">
                                 <div class="single-bio-img">
-                                    <img src="img/Omosh1.jpg" />
+					<img src="{% static 'img/Omosh1.jpg' %}" />
                                 </div>
                                 <div class="single-bio-text">
                                     <h3>Muthabathula Prathibha
@@ -192,7 +188,7 @@
                                 <div class="owl-carousel related-slider">
                                     <div class="post-item">
                                         <div class="post-img">
-                                            <img src="img/post-1.jpg" />
+						<img src="{% static 'img/post-1.jpg' %}" />
                                         </div>
                                         <div class="post-text">
                                             <a href="">"Ajay Engineering the Future: Challenges and Innovations in the Industry"
@@ -205,7 +201,7 @@
                                     </div>
                                     <div class="post-item">
                                         <div class="post-img">
-                                            <img src="img/post-2.jpg" />
+						<img src="{% static 'img/post-2.jpg' %}" />
                                         </div>
                                         <div class="post-text">
                                             <a href="">"Building Beyond Borders: Global Trends Shaping the Industry"
@@ -218,7 +214,7 @@
                                     </div>
                                     <div class="post-item">
                                         <div class="post-img">
-                                            <img src="img/post-3.jpg" />
+						<img src="{% static 'img/post-3.jpg' %}" />
                                         </div>
                                         <div class="post-text">
                                             <a href="">"Resilience in Construction: Adapting to Challenges and Thriving"
@@ -231,7 +227,7 @@
                                     </div>
                                     <div class="post-item">
                                         <div class="post-img">
-                                            <img src="img/post-4.jpg" />
+						<img src="{% static 'img/post-4.jpg' %}" />
                                         </div>
                                         <div class="post-text">
                                             <a href="">"From Blueprint to Reality: The Evolution of Modern Construction"
@@ -251,7 +247,7 @@
                                     <li class="comment-item">
                                         <div class="comment-body">
                                             <div class="comment-img">
-                                                <img src="img/rev4.jpg" />
+						    <img src="{% static 'img/rev4.jpg' %}" />
                                             </div>
                                             <div class="comment-text">
                                                 <h3><a href="">Josh </a></h3>
@@ -281,7 +277,7 @@
                                             <li class="comment-item">
                                                 <div class="comment-body">
                                                     <div class="comment-img">
-                                                        <img src="img/rev3.jpg" />
+							    <img src="{% static 'img/rev3.jpg' %}" />
                                                     </div>
                                                     <div class="comment-text">
                                                         <h3><a href="">Kelvin </a></h3>
@@ -340,7 +336,7 @@
                                     <div class="recent-post">
                                         <div class="post-item">
                                             <div class="post-img">
-                                                <img src="img/post-1.jpg" />
+						    <img src="{% static 'img/post-1.jpg' %}" />
                                             </div>
                                             <div class="post-text">
                                                 <a href="">"Sustainable Construction: Paving the Way for a Greener Future"
@@ -353,7 +349,7 @@
                                         </div>
                                         <div class="post-item">
                                             <div class="post-img">
-                                                <img src="img/post-2.jpg" />
+						    <img src="{% static 'img/post-2.jpg' %}" />
                                             </div>
                                             <div class="post-text">
                                                 <a href="">"Building Beyond Borders: Global Trends Shaping the Industry"
@@ -366,7 +362,7 @@
                                         </div>
                                         <div class="post-item">
                                             <div class="post-img">
-                                                <img src="img/post-3.jpg" />
+						    <img src="{% static 'img/post-3.jpg' %}" />
                                             </div>
                                             <div class="post-text">
                                                 <a href="">"From Blueprint to Reality: The Evolution of Modern Construction"
@@ -379,7 +375,7 @@
                                         </div>
                                         <div class="post-item">
                                             <div class="post-img">
-                                                <img src="img/post-4.jpg" />
+						    <img src="{% static 'img/post-4.jpg' %}" />
                                             </div>
                                             <div class="post-text">
                                                 <a href="">"Tech Trends in Construction: Embracing Innovation for Success"
@@ -392,7 +388,7 @@
                                         </div>
                                         <div class="post-item">
                                             <div class="post-img">
-                                                <img src="img/post-5.jpg" />
+						    <img src="{% static 'img/post-5.jpg' %}" />
                                             </div>
                                             <div class="post-text">
                                                 <a href="">"Sustainable Construction: Paving the Way for a Greener Future"
@@ -408,7 +404,7 @@
 
                                 <div class="sidebar-widget wow fadeInUp">
                                     <div class="image-widget">
-                                        <a href="#"><img src="img/blog-1.jpg" alt="Image"></a>
+					    <a href="#"><img src="{% static 'img/blog-1.jpg' %}" alt="Image"></a>
                                     </div>
                                 </div>
 
@@ -430,7 +426,7 @@
                                             <div id="featured" class="container tab-pane active">
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-1.jpg" />
+							    <img src="{% static 'img/post-1.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -442,7 +438,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-2.jpg" />
+							    <img src="{% static 'img/post-2.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -454,7 +450,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-3.jpg" />
+							    <img src="{% static 'img/post-3.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -466,7 +462,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-4.jpg" />
+							    <img src="{% static 'img/post-4.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -478,7 +474,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-5.jpg" />
+							    <img src="{% static 'img/post-5.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -492,7 +488,7 @@
                                             <div id="popular" class="container tab-pane fade">
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-1.jpg" />
+							    <img src="{% static 'img/post-1.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -504,7 +500,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-2.jpg" />
+							    <img src="{% static 'img/post-2.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -516,7 +512,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-3.jpg" />
+							    <img src="{% static 'img/post-3.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -528,7 +524,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-4.jpg" />
+							    <img src="{% static 'img/post-4.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -540,7 +536,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-5.jpg" />
+							    <img src="{% static 'img/post-5.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -554,7 +550,7 @@
                                             <div id="latest" class="container tab-pane fade">
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-1.jpg" />
+							    <img src="{% static 'img/post-1.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -566,7 +562,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-2.jpg" />
+							    <img src="{% static 'img/post-2.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -578,7 +574,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-3.jpg" />
+							    <img src="{% static 'img/post-3.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -590,7 +586,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-4.jpg" />
+							    <img src="{% static 'img/post-4.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -602,7 +598,7 @@
                                                 </div>
                                                 <div class="post-item">
                                                     <div class="post-img">
-                                                        <img src="img/post-5.jpg" />
+							    <img src="{% static 'img/post-5.jpg' %}" />
                                                     </div>
                                                     <div class="post-text">
                                                         <a href="">"Navigating the Evolving Landscape of Construction"</a>
@@ -619,7 +615,7 @@
 
                                 <div class="sidebar-widget wow fadeInUp">
                                     <div class="image-widget">
-                                        <a href="#"><img src="img/blog-2.jpg" alt="Image"></a>
+					    <a href="#"><img src="{% static 'img/blog-2.jpg' %}" alt="Image"></a>
                                     </div>
                                 </div>
 
@@ -640,7 +636,7 @@
 
                                 <div class="sidebar-widget wow fadeInUp">
                                     <div class="image-widget">
-                                        <a href="#"><img src="img/proj7/main.jpg" alt="Image"></a>
+					    <a href="#"><img src="{% static 'img/proj7/main.jpg' %}" alt="Image"></a>
                                     </div>
                                 </div>
 
@@ -755,20 +751,21 @@
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-
-        <!-- JavaScript Libraries -->
+       <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/slick/slick.min.js' %}"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+
     </body>
 </html>
